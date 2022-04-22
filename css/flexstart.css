@@ -88,7 +88,8 @@ html {
 
 @media (max-width:767px) {
     .main-heading h1 {
-        font-size: 28px;
+        font-size: 25px;
+        padding: 0 15px;
     }
 }
 
@@ -484,7 +485,7 @@ header nav ul button a {
 .values .box img {
     max-width: 100%;
     width: 200px;
-    margin: 15px 0;
+    margin: 15px auto;
     transition: var(--transition);
     transform: scale(1);
 }
@@ -1547,7 +1548,7 @@ img {
 
 .blog .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
 
@@ -1736,6 +1737,7 @@ img {
 @media (max-width:767px) {
     .newsletter form {
         width: 100%;
+        gap: 10px;
     }
 }
 
@@ -1747,6 +1749,12 @@ img {
 .newsletter form input[type="email"] {
     flex: 1;
     padding-left: 10px;
+}
+
+@media (max-width:767px) {
+    .newsletter form input[type="email"] {
+        padding-left: 0;
+    }
 }
 
 .newsletter form input[type="submit"] {
