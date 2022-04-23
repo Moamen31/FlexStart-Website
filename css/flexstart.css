@@ -782,7 +782,7 @@ header nav ul button a {
 
 .services .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     text-align: center;
 }
@@ -1025,7 +1025,7 @@ header nav ul button a {
 .pricing .box img {
     max-width: 100%;
     width: 140px;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 .pricing .box ul li {
@@ -1349,7 +1349,7 @@ header nav ul button a {
 .testimonials .box img {
     width: 90px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin: 15px auto;
 }
 
 .testimonials .box h4 {
@@ -1643,6 +1643,12 @@ img {
 .contact .info .box {
     padding: 25px 30px;
     background-color: #fafbff;
+}
+
+@media (max-width:767px) {
+    .contact .info .box {
+        text-align: center;
+    }
 }
 
 .contact .info .box i {
