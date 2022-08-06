@@ -59,7 +59,7 @@ window.onscroll = function () {
         header.style.cssText = "position:fixed;background-color:white;z-index: 50;box-shadow:0px 0px 30px rgb(127 137 161 / 25%);"
     }
     if (window.scrollY === 0) {
-        header.style.cssText = "position:absolute;background-color:tranparent;"
+        header.style.cssText = "position:absolute;background-color:tranparent;padding:0 7px;"
     }
     //scroll btn
     if (window.scrollY >= 600) {
