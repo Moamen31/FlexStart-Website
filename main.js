@@ -92,7 +92,7 @@ faqQuestions.forEach(function (question) {
             }
         })
 
-        faqArrowIcon.classList.toggle("rotate-arrow")
+        faqArrowIcon.classList.add("rotate-arrow")
         answer.classList.toggle("show-text")
     })
 })
