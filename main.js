@@ -84,8 +84,10 @@ faqQuestions.forEach(function (question) {
         //make sure to remove all other classes
         answers.forEach(function (ans) {
             if (ans !== answer) {
-                let arrow = ans.querySelector(".faq-ul .fa-solid")
-                arrow.classList.remove("rotate-arrow")
+                let arrows = document.querySelectorAll(".faq-ul .fa-solid")
+                arrows.forEach(function(arrow){
+                    arrow.classList.remove("rotate-arrow")
+                })
                 ans.classList.remove("show-text")
             }
         })
