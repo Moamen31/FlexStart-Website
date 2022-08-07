@@ -1920,6 +1920,12 @@ img {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .newsletter form input[type="submit"] {
+    padding:13px 24px;
+  }
+}
+
 /* end newsletter */
 
 /* start footer */
