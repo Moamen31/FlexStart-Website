@@ -84,7 +84,7 @@ faqQuestions.forEach(function (question) {
         //make sure to remove all other classes
         answers.forEach(function (ans) {
             if (ans !== answer) {
-                ans.classList.remove("rotate-arrow")
+                faqArrowIcon.classList.remove("rotate-arrow")
                 ans.classList.remove("show-text")
             }
         })
