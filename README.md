@@ -1,2 +1,2 @@
 # FlexStart-Website
-FlexStart-Website made with HTML and CSS. Responsive with all screens.
+FlexStart-Website made with HTML, Css and Js. responsive with all screens using media query.
