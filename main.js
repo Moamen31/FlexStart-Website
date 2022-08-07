@@ -79,15 +79,15 @@ faqQuestions.forEach(function (question) {
     question.addEventListener("click", function () {
 
         let answer = question.querySelector(".answer");
-        let faqArrowIcon = question.querySelector(".faq-ul .fa-solid");
+        let faqArrowIcon = question.querySelector(".question .fa-solid");
 
         //make sure to remove all other classes
         answers.forEach(function (ans) {
             if (ans !== answer) {
-//                 let arrows = document.querySelectorAll(".faq-ul .fa-solid");
-//                 arrows.forEach(function(arrow){
-//                     arrow.classList.remove("rotate-arrow")
-//                 });
+                let arrows = document.querySelectorAll(".question .fa-solid");
+                arrows.forEach(function(arrow){
+                    arrow.classList.remove("rotate-arrow")
+                });
                 ans.classList.remove("show-text")
             }
         });
