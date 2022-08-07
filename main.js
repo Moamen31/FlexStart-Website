@@ -78,28 +78,28 @@ let answers = document.querySelectorAll(".question .answer")
 faqQuestions.forEach(function (question) {
     question.addEventListener("click", function () {
 
-        let answer = question.querySelector(".answer")
+        let answer = question.querySelector(".answer");
         let faqArrowIcon = question.querySelector(".faq-ul .fa-solid");
 
         //make sure to remove all other classes
         answers.forEach(function (ans) {
             if (ans !== answer) {
-//                 let arrows = document.querySelectorAll(".faq-ul .fa-solid")
+//                 let arrows = document.querySelectorAll(".faq-ul .fa-solid");
 //                 arrows.forEach(function(arrow){
 //                     arrow.classList.remove("rotate-arrow")
-//                 })
+//                 });
                 ans.classList.remove("show-text")
             }
-        })
+        });
 
         faqArrowIcon.classList.toggle("rotate-arrow")
         answer.classList.toggle("show-text")
-    })
-})
+    });
+});
 
 //feautures taps
-let btns = document.querySelectorAll(".holder .info span")
-let infoTexts = document.querySelectorAll(".holder .info-text")
+let btns = document.querySelectorAll(".holder .info span");
+let infoTexts = document.querySelectorAll(".holder .info-text");
 
 btns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
@@ -109,7 +109,7 @@ btns.forEach(function (btn) {
 
         infoTexts.forEach(function(e){
             e.classList.remove("show-text")
-        })
+        });
 
         //get text id
         infoTexts.forEach(function(text){
@@ -119,14 +119,14 @@ btns.forEach(function (btn) {
             if(targetId === textId){
                 text.classList.add("show-text")
             }
-        })
+        });
 
 
         //remove class acrive from all other btns
         btns.forEach(function (btn) {
             btn.classList.remove("active")
-        })
+        });
         //add class active to the btn
         btn.classList.toggle("active")
-    })
-})
+    });
+});
