@@ -71,8 +71,9 @@ window.onscroll = function () {
 }
 
 //FAQ
-let faqQuestions = document.querySelectorAll(".faq-ul .question")
-let answers = document.querySelectorAll(".question .answer")
+let faqQuestions = document.querySelectorAll(".faq-ul .question");
+let answers = document.querySelectorAll(".question .answer");
+let arrows = document.querySelectorAll(".question .fa-solid");
 
 //for each question we will do a function on click
 faqQuestions.forEach(function (question) {
@@ -84,12 +85,13 @@ faqQuestions.forEach(function (question) {
         //make sure to remove all other classes
         answers.forEach(function (ans) {
             if (ans !== answer) {
-                let arrows = document.querySelectorAll(".question .fa-solid");
-                arrows.forEach(function(arrow){
-                    arrow.classList.remove("rotate-arrow")
-                });
                 ans.classList.remove("show-text")
             }
+        });
+        arrows.forEach(function (arrow) {
+            if (arrow !== faqArrowIcon) {
+                arrow.classList.remove("rotate-arrow")
+            };
         });
 
         faqArrowIcon.classList.toggle("rotate-arrow")
