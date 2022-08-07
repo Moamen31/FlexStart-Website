@@ -82,15 +82,15 @@ faqQuestions.forEach(function (question) {
         let faqArrowIcon = question.querySelector(".faq-ul .fa-solid");
 
         //make sure to remove all other classes
-        faqQuestions.forEach(function (quest) {
-            if (quest !== question) {
+        answers.forEach(function (ans) {
+            if (ans !== answer) {
                 faqArrowIcon.classList.remove("rotate-arrow")
                 ans.classList.remove("show-text")
             }
         })
 
-        faqArrowIcon.classList.toggle("rotate-arrow")
-        answer.classList.toggle("show-text")
+        faqArrowIcon.classList.add("rotate-arrow")
+        answer.classList.add("show-text")
     })
 })
 
