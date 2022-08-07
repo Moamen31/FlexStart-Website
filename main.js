@@ -4,7 +4,7 @@ let menu = document.querySelector(".menu")
 
 //cover the page when the icon clicked
 let coverPage = document.createElement("div")
-//make it display none so it won't show untill we click
+//make it display none so it won't show until we click
 coverPage.style.display = "none"
 
 //function on click
